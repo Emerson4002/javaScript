@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Dados</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            color: white;
+            background-color: lightslategrey;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Ja me livrei da maldição</p>
+    
+    <script>
+        /*esse tipo comentario serve para comentar varias linhas.
+         a seguir vão aparecer 3 janelas alert,confirm e prompt.   
+        */
+        //  window.alert('Minha primeira Mensagem!');
+        //  window.confirm("Vc esta curtindo");
+
+
+        var nome = window.prompt('Qual o seu nome'); //pede pra vc colocar seu nome.
+        window.alert("Bem vindo," + nome + " salve lek") //isso é uma concatenação
+
+                //Number.parseInt so vai converter unicamente em numeros inteiros
+        var n1 = Number.parseInt(window.prompt("Digite um numero"))//string
+                //Number.parseFloat vai conver em numero float/flutuante
+        var n2 = Number.parseFloat(window.prompt("Digite um segundo numero real"))//string
+                //Number deixa o JS decidir de acordo com os numeros que recebe
+        var n3 = Number(window.prompt("Digite um terceiro numero"))//string
+
+        var resultado = n1 + n2 + n3;//são numbers então pra funcionar corretamente tem que converter 
+        
+        // window.alert("O resultado: " + String(resultado))
+        window.alert(`A soma de ${n1} + ${n2} + ${n3} é igual a ${resultado} `)
+
+         
+
+    </script>
+    
+
+
+
+</body>
+</html>
