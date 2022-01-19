@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducion to DOM</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            color: white;
+            background-color: rgb(58, 159, 218);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong> DOm</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //o cochetes serve para selecionar qual o elemento vc quer caso não queira selecionar todos do mesmo tipo
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //window.document.getElementById()
+        //window.document.getElementsByName()
+        //window.document.getElementsByClassName()
+        //essa é a forma longa da pra encutar por window.document.getElementById("msg").innerText = "Ola"
+
+        //var d = window.document.getElementById("msg")
+        //d.innerText = "Estou aguardo"
+        var d = window.document.querySelector("div#msg")
+        
+        //isso aqui é o tal do DOM
+        //innerText =  o texto que ta dentro
+        window.document.write()
+
+    </script>
+</body>
+</html>
