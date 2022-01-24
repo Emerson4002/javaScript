@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:1.2em;
+            
+        }
+        #nacionalidade{
+            background-color: cadetblue;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            width: 50%;
+            border-radius: 5px;
+            box-shadow: 2px 4px 14px 0px rgba(0, 0, 0, 0.336);
+
+        }
+        input#txtp{
+            border:none;
+            padding: 10px;
+            margin-bottom:10px;
+            border-radius: 10px;
+            
+        }
+        input#txtp::selection{
+            border: none;
+            outline: none;
+        }
+        #analisar:hover{
+            background-color: pink;
+            border: 2px solid rgba(0, 0, 0, 0.459);
+        }
+        #analisar{
+            border: none;
+            padding: 5px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #res{
+            padding:10px;
+            color: white;
+            background-color: rgb(74, 146, 168);
+            width: 50%;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+        input:focus {
+             outline: none /* Removes the border when the input is clicked */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="nacionalidade">
+        <h1>Qual Nacionalidade tu eis?</h1>
+        <input type="text" name="txtp" id="txtp" >
+        <input type="button" value="analisar" id="analisar" onclick="analisar()">
+        <div id="res">
+        </div>
+    </div>
+    
+    <script >
+        function analisar(){
+            var pais = window.document.getElementById("txtp")
+            var res = window.document.getElementById("res")
+            var pas1 = String(pais.value)
+            
+            if(pas1 != "Brasil"){
+                res.innerHTML = `tu é gringo bro`
+            }else{
+                res.innerHTML = "vc é brasileiro"
+            }if(pas1 == null){
+                res.innerHTML = "coloca o nome do teu pais seu animal"
+
+            }
+
+           
+
+        }
+    </script>
+
+
+</body>
+</html>
