@@ -16,6 +16,10 @@ section{
     border-radius: 10px;
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.342);
 }
+select#flist{
+    width:200px;
+    margin-top: 20px;
+}
 footer{
     text-align: center;
     color: white;
